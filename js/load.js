@@ -1,14 +1,6 @@
-/*
- *
- * akshay sharma 
- * fxn769@gmail.com
- * 5/7/2020
- * 
- */
-
 var socialtags = [{
     img: "img/github.svg",
-    link: "https://github.com/Chris-On-PC"
+    link: "https://github.com/cviviers"
 }, {
     img: "img/linkedin.svg",
     link: "https://www.linkedin.com/in/chrisviviers/"
