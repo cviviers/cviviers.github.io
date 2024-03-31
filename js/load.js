@@ -7,7 +7,14 @@ var socialtags = [{
 }, {
     img: "img/twitter.svg",
     link: "https://twitter.com/@Chris_Viviers"
-}]
+}, {
+    img: "img/email.svg",
+    link: "mailto:c.g.a.viveirs@gmail.com"
+},{
+    img: "img/google-scholar.svg",
+    link: "https://scholar.google.com/citations?user=wE8xva4AAAAJ&hl=en&authuser=3"
+    
+    }]
 
 function loadSocialIcons() {
     var socialtext = ""
