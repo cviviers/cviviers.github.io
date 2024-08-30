@@ -30,6 +30,26 @@
     <div class="row">
         <div class="center col-10 col-sm-10 col-lg-10 col-md-10 spacing">
             <h1>Services</h1>
+
+            <div class="stats-container" style="padding-top: 20px;">
+                <div class="stat-item">
+                    <p>Graduation Projects Supervised:</p> <span id="graduationProjects" class="stat-number">5</span>
+                    
+                </div>
+                <div class="stat-item">
+                    <p>Internships Supervised:</p> <span id="internships" class="stat-number">4</span>
+                    
+                </div>
+            </div>
+
+            <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                animateValue("graduationProjects", 0, 5, 2000); // Assuming 5 graduation projects
+                animateValue("internships", 0, 6, 2000); // Assuming 3 internships
+            });
+            </script>
+
             <div class="year">
                 <h2 class="pub-year">2024</h2>
                 <hr>

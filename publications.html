@@ -30,17 +30,126 @@
     <div class="row">
         <div class="center col-10 col-sm-10 col-lg-10 col-md-10 spacing">
             <h1>My Publications</h1>
-            <div class="year">
+            
+            <h2>Highlighted Papers</h2>
+            <div class="highlight">
+                <hr>
+                <ul>
+                    <li data-venue="ECCV">
+                        <div class="publication-content">
+                            <a href="">
+                                Can Your Generative Model Detect Out-of-Distribution Covariate Shift?</a><br>
+                                <p>Authors:  <b>C.G.A. Viviers;</b> M.M.A. Valiuddin&#42; F. Caetano&#42; L Abdi; Lena Filatova; P.H.N. de With; F. van der Sommen</p>
+                                <a href="https://eccv2024.ecva.net/">European Conference on Computer Vision Uncertainty in Computer Vision</a><br>
+                                <a class="external-element" href="">Paper incoming in October 2024</a>
+                                <a class="external-element" href="https://github.com/cviviers/CovariateFlow">code</a>
+                        </div>
+                    </li>
+                    <li data-venue="IEEE TMI">
+                        <div class="publication-content">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10639444">
+                                Investigating and Improving Latent Density Segmentation Models for Aleatoric Uncertainty Quantification in Medical Imaging</a><br>
+                                <p>Authors:  M.M.A. Valiuddin; <b>C.G.A. Viviers;</b> Ruud J. G. Van Sloun; P.H.N. de With; F. van der Sommen</p>rancisco
+                                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42">IEEE Transactions on Medical Imaging Journal</a><br>
+                                <a class="external-element" href="https://ieeexplore.ieee.org/abstract/document/10639444">abstract</a> 
+                                <a class="external-element" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10639444">pdf</a>
+                        </div>
+                    </li>
+                    <li data-venue="IEEE TIP">
+                        <div class="publication-content">
+                            <a href="https://ieeexplore.ieee.org/document/10478293">
+                                Advancing 6-DoF Instrument Pose Estimation in Variable X-Ray Imaging Geometries</a><br>
+                                <p>Authors: <b>Christiaan G.A. Viviers;</b> Lena Filatova; Maurice Termeer; Peter H.N. De With; Fons van der Sommen</p>
+                                <a href="https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=83">IEEE Transactions on Image Processing Journal</a><br>
+                                <a class="external-element" href="https://ieeexplore.ieee.org/document/10478293">abstract</a> 
+                                <a class="external-element" href="https://ieeexplore.ieee.org/document/10478293">pdf</a>
+                                <a class="external-element" href="https://github.com/cviviers/YOLOv5-6D-Pose">code</a>
+
+                        </div>
+                    </li>
+                    <li data-venue="ICCV CVAMD">
+                        <div class="publication-content">
+                            <a href="https://openaccess.thecvf.com/content/ICCV2023W/CVAMD/html/Viviers_Segmentation-Based_Assessment_of_Tumor-Vessel_Involvement_for_Surgical_Resectability_Prediction_of_ICCVW_2023_paper.html">
+                                Segmentation-Based Assessment of Tumor-Vessel Involvement for Surgical Resectability Prediction of Pancreatic Ductal Adenocarcinoma</a><br>
+                                <p>Authors: <b>Christiaan Viviers&#42;;</b> Mark Ramaekers&#42;; Amaan Valiuddin; Terese Hellström; Nick Tasios; John van der Ven; Igor Jacobs; Lotte Ewals; Joost Nederend; Peter de With; Misha Luyer; Fons van der Sommen;</p>
+
+                                <a href="https://link.springer.com/book/10.1007/978-3-031-47076-9">Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Computer Vision for Automated Medical Diagnosis</a><br>
+                                <a class="external-element" href="https://openaccess.thecvf.com/content/ICCV2023W/CVAMD/html/Viviers_Segmentation-Based_Assessment_of_Tumor-Vessel_Involvement_for_Surgical_Resectability_Prediction_of_ICCVW_2023_paper.html">abstract</a> 
+                                <a class="external-element" href="https://openaccess.thecvf.com/content/ICCV2023W/CVAMD/papers/Viviers_Segmentation-Based_Assessment_of_Tumor-Vessel_Involvement_for_Surgical_Resectability_Prediction_of_ICCVW_2023_paper.pdf">pdf</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>All Publications</h2>
+            <div class="filter-container">
+                <label for="year-filter">Filter by year:</label>
+                <select id="year-filter" class="custom-select">
+                    <option value="all">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const yearFilter = document.getElementById('year-filter');
+                    const publications = document.querySelectorAll('.year');
+                
+                    yearFilter.addEventListener('change', function() {
+                        const selectedYear = this.value;
+                        
+                        publications.forEach(yearSection => {
+                            if (selectedYear === 'all' || yearSection.id === selectedYear) {
+                                yearSection.style.display = 'block';
+                            } else {
+                                yearSection.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            </script>
+
+            <div class="year" id="2024">
                 <h2 class="pub-year">2024</h2>
                 <hr>
                 <ul>
+                    <li data-venue="ECCV">
+                        <div class="publication-content">
+                            <a href="">
+                                Can Your Generative Model Detect Out-of-Distribution Covariate Shift?</a><br>
+                                <p>Authors:  <b>C.G.A. Viviers;</b> M.M.A. Valiuddin&#42; F. Caetano&#42; L Abdi; Lena Filatova; P.H.N. de With; F. van der Sommen</p>
+                                <a href="https://eccv2024.ecva.net/">European Conference on Computer Vision</a><br>
+                                <a class="external-element" href="">Paper incoming in October 2024</a>
+                             
+   
+                        </div>
+                    </li>
+                    <li data-venue="IEEE TMI">
+                        <div class="publication-content">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10639444">
+                                Investigating and Improving Latent Density Segmentation Models for Aleatoric Uncertainty Quantification in Medical Imaging</a><br>
+                                <p>Authors:  M.M.A. Valiuddin; <b>C.G.A. Viviers;</b> Ruud J. G. Van Sloun; P.H.N. de With; F. van der Sommen</p>rancisco
+                                <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42">IEEE Transactions on Medical Imaging Journal</a><br>
+                                <a class="external-element" href="https://ieeexplore.ieee.org/abstract/document/10639444">abstract</a> 
+                                <a class="external-element" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10639444">pdf</a>
+   
+                        </div>
+                    </li>
+
                     <li data-venue="MICCAI UNSURE">
                         <div class="publication-content">
                             <a href="https://link.springer.com/chapter/10.1007/978-3-030-87735-4_8">
                                 Typicality excels Likelihood for Unsupervised Out-of-Distribution Detection in Medical Imaging</a><br>
                                 <p>Authors: L Abdi; M.M.A. Valiuddin&#42; <b>C.G.A. Viviers&#42;</b> P.H.N. de With; F. van der Sommen</p>
                                 <a href="https://unsuremiccai.github.io/">Medical Image Computing and Computer Assisted Intervention - Uncertainty for Safe Utilization of Machine Learning in Medical Imaging</a><br>
-                                <a class="external-element" href="https://github.com/lemarabd/typicality-MOOD">code</a> 
+                                <a class="external-element" href="https://github.com/lemarabd/typicality-MOOD">code</a>
+                                <a class="external-element" href="">Paper incoming in October 2024</a> 
    
                         </div>
                     </li>
@@ -112,7 +221,7 @@
                 </ul>
             </div>
             
-            <div class="year">
+            <div class="year" id="2023">
                 <h2  class="pub-year">2023</h2>
                 <hr>
                 <ul>
@@ -181,7 +290,7 @@
                     <!-- Add more publications as needed -->
                 </ul>
             </div>
-            <div class="year">
+            <div class="year" id="2022">
                 <h2  class="pub-year">2022</h2>
                 <hr>
                 <ul>
@@ -222,7 +331,7 @@
                 </ul>
             </div>
             
-            <div class="year">
+            <div class="year" id="2021">
                 <h2  class="pub-year">2021</h2>
                 <hr>
                 <ul>
@@ -241,7 +350,7 @@
                     <!-- Add more publications as needed -->
                 </ul>
             </div>
-            <div class="year">
+            <div class="year" id="2020">
                 <h2  class="pub-year">2020</h2>
                 <hr>
                 <ul>
@@ -258,7 +367,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="year">
+            <div class="year" id="2019">
                 <h2  class="pub-year">2019</h2>
                 <hr>
                 <ul>
