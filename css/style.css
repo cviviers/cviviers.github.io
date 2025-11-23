@@ -5,6 +5,8 @@ h1{text-align:center!important;margin-top:50px!important;font-weight:200!importa
 
 h2{text-align:center!important;margin-top:50px!important;font-weight:200!important;font-size:2em}
 
+h3{text-align:center!important;margin-top:50px!important;margin-bottom:20px!important;font-weight:200!important;font-size:1.5em}
+
 .center{margin:auto!important;text-align:center!important}
 
 .vertical-center{min-height:50%;min-height:50vh;display:flex;align-items:center; margin-bottom: 0;}
@@ -13,14 +15,14 @@ h2{text-align:center!important;margin-top:50px!important;font-weight:200!importa
 
 .title-desc{margin-top:20px!important;margin-bottom:30px!important;max-width:450px!important;font-weight:200;font-size:18px}
 
-.resume-text{position: static;font-weight: 200;letter-spacing: 5px;font-size: 16px;margin-left: auto;margin-right: 10px;text-align: right;}
+.resume-text{position: static;font-weight: 200;letter-spacing: 5px;font-size: 16px;margin-left: auto;margin-right: auto;text-align: center!important;}
 
 .resume-text a{color:inherit; text-decoration: none; display: flex; padding:12px;} 
 
 .resume-text a img{ padding-right:14px;}
 
 @media screen and (max-width: 576px) {.resume-text a{justify-content: center;}}
-@media screen and (min-width: 575px) {.resume-text a{justify-content: flex-end;}}
+@media screen and (min-width: 575px) {.resume-text a{justify-content: center;}}
 
 .light-mode{color:#0d0e0f!important;background:#fff!important;}
 
@@ -93,7 +95,7 @@ button:focus {outline:0;}
 
 a[href] {
     text-decoration: none; /* Remove underline */
-    color: #00b0ff; /* Light blue color */
+    color: #00aeff; /* Light blue color */
 }
 a.external-element {
     border: 1px solid #00b0ff; /* Change color as needed */
@@ -203,4 +205,143 @@ body.dark-mode .custom-select option {
 
 b {
     font-weight: 500; /* Slightly less bold than the default 700 */
+}
+
+/* Project Styles */
+.project-item {
+    margin-bottom: 60px;
+}
+
+.project-title {
+    text-align: left!important;
+    margin-top: 30px!important;
+    margin-bottom: 10px!important;
+    font-size: 1.8em;
+}
+
+.project-meta {
+    text-align: left;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+.project-date {
+    color: #00b0ff;
+}
+
+.project-tags {
+    color: #888;
+}
+
+.project-images {
+    margin: 30px 0;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.project-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.project-img-small {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .project-image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-description {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.project-description h3 {
+    text-align: left!important;
+    margin-top: 30px!important;
+    margin-bottom: 15px!important;
+    font-size: 1.3em;
+}
+
+.project-description p {
+    margin-bottom: 20px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.project-list li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+}
+
+.project-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #00b0ff;
+}
+
+.index-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.index-list li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+}
+
+.index-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #00b0ff;
+}
+
+.project-links {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.project-links a {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.project-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 50px 0;
+}
+
+.light-mode .project-divider {
+    border-top: 1px solid #ddd;
+}
+
+.light-mode .project-meta {
+    color: #666;
+}
+
+.light-mode .project-tags {
+    color: #666;
 }

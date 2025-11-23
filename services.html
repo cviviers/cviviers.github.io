@@ -19,7 +19,7 @@
     <button onclick="dayNightToggle()">Toggle dark mode</button>
     <nav>
         <ul>
-            <li><a href="index.html">About Me</a></li>
+            <li><a href="index.html">Me</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="services.html">Services</a></li>
@@ -33,11 +33,11 @@
 
             <div class="stats-container" style="padding-top: 20px;">
                 <div class="stat-item">
-                    <p>Graduation Projects Supervised:</p> <span id="graduationProjects" class="stat-number">7</span>
+                    <p>Graduation Projects Supervised:</p> <span id="graduationProjects" class="stat-number">10</span>
                     
                 </div>
                 <div class="stat-item">
-                    <p>Internships Supervised:</p> <span id="internships" class="stat-number">6</span>
+                    <p>Internships Supervised:</p> <span id="internships" class="stat-number">7</span>
                     
                 </div>
             </div>
@@ -45,14 +45,37 @@
             <script>
 
             document.addEventListener('DOMContentLoaded', function() {
-                animateValue("graduationProjects", 0, 5, 2000); // Assuming 5 graduation projects
-                animateValue("internships", 0, 6, 2000); // Assuming 3 internships
+                animateValue("graduationProjects", 0, 10, 2000); // Assuming 5 graduation projects
+                animateValue("internships", 0, 7, 2000); // Assuming 3 internships
             });
             </script>
+            <div class="year">
+                <h2 class="pub-year">2026</h2>
+                <hr>
+                <ul>
+                    
+                    <li data-venue="CVPR">
+                        <div class="publication-content">
+                            <a href="https://cvpr2026.thecvf.com/">
+                                Reviewer for the Conference on Computer Vision and Pattern Recognition 2026</a><br>
+                        </div>
+                    </li>
+                    
+                    <li data-venue="Teacher">
+                        <div class="publication-content">
+                            <a href="https://research.tue.nl/nl/courses/neural-networks-for-computer-vision">
+                                Assistant teacher <b>Neural Networks for Computer Vision.</b></a><br>
+                                <p>Assistant teacher for an Electrical Engineering Masters'course on <b>Neural Networks for Computer Vision</b>. The course builds fundemental knowledge on deep learning and computer visions related. I specificialy tought lectures on fundemental concepts for CNNs and Transformers as well as their applications in Object Detection, Segmentation and Pose Estimation.</p>
+                        </div>
+                    </li>
+                    <!-- Add more publications as needed -->
+                </ul>
+            </div>
             <div class="year">
                 <h2 class="pub-year">2025</h2>
                 <hr>
                 <ul>
+                    
                     <li data-venue="IEEE TMI">
                         <div class="publication-content">
                             <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42">
