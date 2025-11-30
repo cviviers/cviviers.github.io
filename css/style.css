@@ -235,7 +235,8 @@ b {
 }
 
 .project-images {
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 85%;
 }
 
 .project-img {
