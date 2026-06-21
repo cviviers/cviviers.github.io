@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications, academic service, and teaching by Christiaan G.A. Viviers.">
+    <meta name="author" content="Christiaan G.A. Viviers">
+    <title>Chris Viviers | Research</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="research">
+    <header class="site-header">
+        <div class="site-shell nav-wrap">
+            <a class="brand" href="index.html">Chris Viviers</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a data-page="home" href="index.html">Home</a>
+                <a data-page="research" href="research.html">Research</a>
+                <a data-page="blog" href="blog.html">Blog</a>
+                <a data-page="projects" href="projects.html">Projects</a>
+                <a href="resume/Christiaan_Viviers_CV.pdf">CV</a>
+                <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-shell page">
+        <section class="hero">
+            <div>
+                <p class="kicker">Research record</p>
+                <h1>Publications, service, and teaching.</h1>
+                <p class="lead">My work centers on trustworthy computer vision and machine learning methods for medical imaging, from uncertainty-aware segmentation to generative OOD detection and CT foundation models.</p>
+            </div>
+            <aside class="profile-card" data-profile-card></aside>
+        </section>
+
+        <div class="view-switch" aria-label="Research page view">
+            <button class="view-switch-button" type="button" data-research-tab="publications" onclick="window.setResearchView && window.setResearchView('publications', true)" aria-pressed="true">Publications</button>
+            <button class="view-switch-button" type="button" data-research-tab="service" onclick="window.setResearchView && window.setResearchView('service', true)" aria-pressed="false">Service &amp; Teaching</button>
+        </div>
+
+        <section class="section" data-research-panel="publications">
+            <div class="section-heading">
+                <h2>highlighted papers</h2>
+                <p>selected work I am particularly proud of.</p>
+            </div>
+            <ul class="publication-list" data-highlight-publications></ul>
+        </section>
+
+        <section class="section" data-research-panel="publications">
+            <div class="section-heading">
+                <h2>all publications</h2>
+                <p>* denotes equal contribution.</p>
+            </div>
+            <div>
+                <div class="controls">
+                    <label for="publication-year">Filter by year</label>
+                    <select class="select" id="publication-year" data-publication-years></select>
+                </div>
+                <ul class="publication-list" data-all-publications></ul>
+            </div>
+        </section>
+
+        <section class="section" id="service" data-research-panel="service" hidden>
+            <div class="section-heading">
+                <h2>Service &amp; Teaching</h2>
+                <p>Reviewing, supervision, and teaching.</p>
+            </div>
+            <div>
+                <div class="stats" data-service-stats></div>
+                <ul class="service-list" data-service></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="site-shell">&copy; 2026 Christiaan G.A. Viviers.</div>
+    </footer>
+
+    <script src="js/content.js"></script>
+    <script src="js/load.js"></script>
+</body>
+</html>

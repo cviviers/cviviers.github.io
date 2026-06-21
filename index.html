@@ -2,73 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" shrink-to-fit="no">
-    <meta content="portfolio website for Christiaan Viviers" name="description">
-    <meta content="Chris Viviers https://github.com/cviviers" name="author">
-    <title>Chris Viviers | Researcher, Engineer &amp; Inventor </title>
-
-    <link href="img/favicon.ico" rel="shortcut icon"/>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.css" rel="stylesheet">
-    <style>
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research website for Christiaan G.A. Viviers, machine learning researcher at Eindhoven University of Technology.">
+    <meta name="author" content="Christiaan G.A. Viviers">
+    <title>Chris Viviers | Research</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="is-loading" data-page="home">
+    <header class="site-header">
+        <div class="site-shell nav-wrap">
+            <a class="brand" href="index.html">Chris Viviers</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a data-page="home" href="index.html">Home</a>
+                <a data-page="research" href="research.html">Research</a>
+                <a data-page="blog" href="blog.html">Blog</a>
+                <a data-page="projects" href="projects.html">Projects</a>
+                <a href="resume/Christiaan_Viviers_CV.pdf">CV</a>
+                <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+            </nav>
+        </div>
+    </header>
 
-<body>
-<button onclick="dayNightToggle()">Toggle dark mode</button>
-
-<div class="container vertical-center">
-    <div class="row">
-        <div class="center">
-            <h1>Hi, I'm Chris</h1>
-            <p class="title-desc center">Machine Learning Researcher at <a href="https://www.tue.nl/en/">TU/e</a> </p>
-            <p class="title-desc center">Electrical Engineering PhD</p>
-            <div class="col-md-8 col-sm-9 center">
-                <div class="row" id="social-list"></div>
+    <main class="site-shell page">
+        <section class="hero">
+            <div>
+                <p class="kicker">Machine learning / Computer vision / reliable representations</p>
+                <h1>Researching robust representations for visual understanding.</h1>
+                <p class="lead">drawn to genuinely difficult problems whose solutions enable something humanity could not previously do. Whether advancing scientific discovery, accelerating engineering, or extending human decision-making, I am motivated by the opportunity to develop technologies that push the frontier of what is possible.</p>
             </div>
-            <div class="col-md-8 col-sm-9 center">  
-                <div class="resume-text">
-                    <a href="resume/Christiaan_Viviers_CV.pdf">
-                        <div class="resume-img"></div>
-                        Resume
-                    </a>
-                </div>
+            <aside class="profile-card" data-profile-card></aside>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>about</h2>
             </div>
-            
-        </div>
-        <img class="center col-10 col-sm-10 col-lg-4 col-md-4" src="img/chris_2.jpg" style="border-radius: 50%; object-fit: cover; width: 70%;">
-    </div>
-</div>
+            <div class="prose narrow" data-profile-bio></div>
+        </section>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="center col-10 col-sm-10 col-lg-8 col-md-8">
-            <h3>I spend most of my time building</h3> 
-            <p class="justify-content"> I'm a scientist and engineer by training, but honestly, I just really enjoy solving problems and seeing ideas evolve. I study systems, computer architecture, and machine learning, but would love to know how the mind works. On a day off I travel, go for a run or daydream about humanity as a Type III Kardashev-scale civilization. </p>
-            <br>
-            <ul class="index-list">   
-                <li>Interest: machine learning, signal processing, computer vision, robotics, biology, optimization, physics, mathematics, travel</li>
-                <li>Allergy: inefficiency, bureaucracy, waiting in lines, traffic jams and 2-factor authentication</li>
-            </ul>
-        </div>
-    </div>
-</div>
+        <section class="section">
+            <div class="section-heading">
+                <h2>interests</h2>
+                <p>topics I keep returning to.</p>
+            </div>
+            <ul class="plain-list" data-profile-interests></ul>
+        </section>
 
-<div class="container-fluid">
-    <div class="row spacing">
-        <div class="center col-10 col-sm-10 col-lg-5 col-md-5 spacing">
-            <a class="some-padding" href="publications.html"> Research Output</a> <a class="some-padding" href="projects.html">Selected Projects</a> <a class="some-padding" href="services.html">Services</a>
-        </div>
-    </div>
-</div>
+        <section class="section">
+            <div class="section-heading">
+                <h2>selected papers</h2>
+                <p>a few representative publications.</p>
+            </div>
+            <ul class="publication-list" data-highlight-publications data-limit="4"></ul>
+        </section>
 
-<script src="js/load.js" type="text/javascript"></script>
-<script>
+        <section class="section">
+            <div class="section-heading">
+                <h2>career</h2>
+                <p>a short trajectory. See the <a href="resume/Christiaan_Viviers_CV.pdf">full CV</a>.</p>
+            </div>
+            <ul class="career-list" data-career></ul>
+        </section>
 
+        <section class="section">
+            <div class="section-heading">
+                <h2>updates</h2>
+                <p>recent research and project notes.</p>
+            </div>
+            <ul class="update-list" data-updates data-limit="4"></ul>
+        </section>
 
-</script>
+        <section class="section">
+            <div class="section-heading">
+                <h2>elsewhere</h2>
+            </div>
+            <p class="narrow" data-personal-note></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="site-shell">&copy; 2026 Christiaan G.A. Viviers.</div>
+    </footer>
+
+    <script src="js/content.js"></script>
+    <script src="js/load.js"></script>
 </body>
 </html>
