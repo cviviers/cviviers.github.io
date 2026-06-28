@@ -202,7 +202,7 @@ window.siteContent = {
         },
         {
             year: 2025,
-            venue: "TBD",
+            venue: "TMLR",
             title: "A Review of Bayesian Uncertainty Quantification in Deep Probabilistic Image Segmentation",
             authors: "M.M.A. Valiuddin, R.J.G. van Sloun*, C.G.A. Viviers*, P.H.N. de With, F. van der Sommen",
             source: "Preprint",
